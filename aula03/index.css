@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #000; 
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.linha {
+    clear: both;
+    background-color: green;
+}
+
+.coluna {
+    display: block;
+    float: left;
+    margin: 1% 0% 1% 1.6%;
+    background: rgba(0, 255, 0, 0.2);
+}
+
+.coluna:first-child {
+    margin-left: 0;
+}
+
+.col_1_3 {
+    width: 31.2%;
+}
+
+.col_2_3 {
+    width: 66.1%;
+}
+
+.col_3_3 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+    .coluna{ margin: 1% 0% 1% 0%;}
+    .col_1_3, .col_2_3, .col_3_3 { width: 100%; }
+}
